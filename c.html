@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Live Pothole Tracking</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization"></script>
+    <script>
+        var map;
+        var heatmap;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 0, lng: 0},
+                zoom: 2
+            });
+            heatmap = new google.maps.visualization.HeatmapLayer({
+                map: map,
+                data: getHeatmapData(),
+                radius: 20
+            });
+        }
+
+        function getHeatmapData() {
+            // Fetch live location data from your server/database
+            // Return an array of google.maps.LatLng objects representing pothole locations
+            // Example:
+            return [
+                new google.maps.LatLng(37.775, -122.434),
+                new google.maps.LatLng(37.776, -122.435),
+                new google.maps.LatLng(37.777, -122.436),
+                // Add more LatLng objects as needed
+            ];
+        }
+
+        // Update heatmap periodically
+        setInterval(function() {
+            heatmap.setData(getHeatmapData());
+        }, 60000); // Update every 60 seconds
+    </script>
+</head>
+<body onload="initMap()">
+    <div id="map" style="height: 100%;"></div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Pothole Tracking</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdJBb4CvvoeqqaM9Mtxg_4nyjmxpI50Ag&libraries=visualization"></script>
+    <script>
+        var map;
+        var heatmap;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 0, lng: 0},
+                zoom: 2
+            });
+            heatmap = new google.maps.visualization.HeatmapLayer({
+                map: map,
+                data: getHeatmapData(),
+                radius: 20
+            });
+        }
+
+        function getHeatmapData() {
+            // Fetch live location data from your server/database
+            // Return an array of google.maps.LatLng objects representing pothole locations
+            // Example:
+            return [
+                new google.maps.LatLng(37.775, -122.434),
+                new google.maps.LatLng(37.776, -122.435),
+                new google.maps.LatLng(37.777, -122.436),
+                // Add more LatLng objects as needed
+            ];
+        }
+
+        // Update heatmap periodically
+        setInterval(function() {
+            heatmap.setData(getHeatmapData());
+        }, 60000); // Update every 60 seconds
+    </script>
+</head>
+<body onload="initMap()">
+    <div id="map" style="height: 100%;"></div>
+</body>
+</html>
+
